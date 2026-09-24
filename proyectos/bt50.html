@@ -48,10 +48,14 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
       <a href="../index.html#sobre-mi" data-es="Sobre mí" data-en="About">Sobre mí</a>
       <a href="../index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
-    <div class="controls">
-      <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
-      <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
-      <button class="ctrl" type="button" data-theme-btn aria-label="Cambiar tema">Oscuro</button>
+    <div class="head-end">
+      <div class="controls">
+        <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+        <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+        <button class="ctrl ctrl-theme" type="button" data-theme-btn
+                data-aria-es="Cambiar a modo oscuro" data-aria-en="Switch to dark mode"
+                aria-label="Cambiar a modo oscuro"><svg class="ico ico-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.5 6.5 4.9 4.9M19.1 19.1l-1.6-1.6M17.5 6.5l1.6-1.6M4.9 19.1l1.6-1.6"/></svg><svg class="ico ico-moon" viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M20.4 14.5A8.6 8.6 0 0 1 9.5 3.6a.7.7 0 0 0-.9-.9 9.9 9.9 0 1 0 12.7 12.7.7.7 0 0 0-.9-.9z"/></svg></button>
+      </div>
     </div>
   </div>
 </header>
@@ -62,9 +66,19 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     <section class="proj-head">
       <a class="proj-back" href="../index.html#proyectos"
          data-es="← Todos los proyectos" data-en="← All work">← Todos los proyectos</a>
-      <p class="card-num">06</p>
-      <h1 data-es="Fotografía deportiva para Super Sand — Torneo BT50 Beach Tennis 2024" data-en="Sports photography for Super Sand — 2024 BT50 Beach Tennis Tournament">Fotografía deportiva para Super Sand — Torneo BT50 Beach Tennis 2024</h1>
-      <p class="proj-lede" data-es="Fotografía profesional para el Torneo BT50 Beach Tennis 2024." data-en="Professional photography for the 2024 BT50 Beach Tennis Tournament.">Fotografía profesional para el Torneo BT50 Beach Tennis 2024.</p>
+
+      <div class="proj-hero">
+        <figure class="proj-media">
+          <video class="head-video" muted loop playsinline preload="none"
+                 poster="../img/bt50/head-poster.jpg" width="858" height="476"
+                 data-src="../img/bt50/head.mp4" aria-hidden="true"></video>
+        </figure>
+        <div class="proj-copy">
+  <p class="card-num">06</p>
+  <h1 data-es="Fotografía deportiva para Super Sand — Torneo BT50 Beach Tennis 2024" data-en="Sports photography for Super Sand — 2024 BT50 Beach Tennis Tournament">Fotografía deportiva para Super Sand — Torneo BT50 Beach Tennis 2024</h1>
+  <p class="proj-lede" data-es="Fotografía profesional para el Torneo BT50 Beach Tennis 2024." data-en="Professional photography for the 2024 BT50 Beach Tennis Tournament.">Fotografía profesional para el Torneo BT50 Beach Tennis 2024.</p>
+        </div>
+      </div>
     </section>
 
     <dl class="facts">
@@ -102,17 +116,17 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     </section>
 
     <div class="plates">
-      <figure class="plate"><img src="../img/bt50/portada-1400.jpg" srcset="../img/bt50/portada-700.jpg 700w, ../img/bt50/portada-1400.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="826" loading="eager" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto" fetchpriority="high"></figure>
-      <figure class="plate"><img src="../img/bt50/01-1600.jpg" srcset="../img/bt50/01-800.jpg 800w, ../img/bt50/01-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="952" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (2)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (2)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (2)"></figure>
-      <figure class="plate"><img src="../img/bt50/02-1600.jpg" srcset="../img/bt50/02-800.jpg 800w, ../img/bt50/02-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="826" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (3)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (3)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (3)"></figure>
-      <figure class="plate"><img src="../img/bt50/03-1600.jpg" srcset="../img/bt50/03-800.jpg 533w, ../img/bt50/03-1600.jpg 1066w" sizes="(min-width:1240px) 1240px, 100vw" width="1066" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (4)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (4)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (4)"></figure>
-      <figure class="plate"><img src="../img/bt50/04-1600.jpg" srcset="../img/bt50/04-800.jpg 533w, ../img/bt50/04-1600.jpg 1066w" sizes="(min-width:1240px) 1240px, 100vw" width="1066" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (5)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (5)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (5)"></figure>
-      <figure class="plate"><img src="../img/bt50/05-1600.jpg" srcset="../img/bt50/05-800.jpg 533w, ../img/bt50/05-1600.jpg 1066w" sizes="(min-width:1240px) 1240px, 100vw" width="1066" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (6)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (6)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (6)"></figure>
-      <figure class="plate"><img src="../img/bt50/06-1600.jpg" srcset="../img/bt50/06-800.jpg 534w, ../img/bt50/06-1600.jpg 1067w" sizes="(min-width:1240px) 1240px, 100vw" width="1067" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (7)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (7)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (7)"></figure>
-      <figure class="plate"><img src="../img/bt50/07-1600.jpg" srcset="../img/bt50/07-800.jpg 800w, ../img/bt50/07-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="826" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (8)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (8)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (8)"></figure>
-      <figure class="plate"><img src="../img/bt50/08-1600.jpg" srcset="../img/bt50/08-800.jpg 533w, ../img/bt50/08-1600.jpg 1067w" sizes="(min-width:1240px) 1240px, 100vw" width="1067" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (9)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (9)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (9)"></figure>
-      <figure class="plate"><img src="../img/bt50/09-1600.jpg" srcset="../img/bt50/09-800.jpg 533w, ../img/bt50/09-1600.jpg 1067w" sizes="(min-width:1240px) 1240px, 100vw" width="1067" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (10)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (10)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (10)"></figure>
-      <figure class="plate"><img src="../img/bt50/10-1600.jpg" srcset="../img/bt50/10-800.jpg 533w, ../img/bt50/10-1600.jpg 1067w" sizes="(min-width:1240px) 1240px, 100vw" width="1067" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (11)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (11)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (11)"></figure>
+      <figure class="plate"><img src="../img/bt50/01-1600.jpg" srcset="../img/bt50/01-800.jpg 800w, ../img/bt50/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="952" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (2)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (2)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (2)"></figure>
+      <figure class="plate"><img src="../img/bt50/02-1600.jpg" srcset="../img/bt50/02-800.jpg 800w, ../img/bt50/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="826" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (3)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (3)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (3)"></figure>
+      <figure class="plate"><img src="../img/bt50/03-1600.jpg" srcset="../img/bt50/03-800.jpg 533w, ../img/bt50/03-1600.jpg 1066w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1066" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (4)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (4)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (4)"></figure>
+      <figure class="plate"><img src="../img/bt50/04-1600.jpg" srcset="../img/bt50/04-800.jpg 533w, ../img/bt50/04-1600.jpg 1066w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1066" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (5)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (5)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (5)"></figure>
+      <figure class="plate"><img src="../img/bt50/05-1600.jpg" srcset="../img/bt50/05-800.jpg 533w, ../img/bt50/05-1600.jpg 1066w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1066" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (6)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (6)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (6)"></figure>
+      <figure class="plate"><img src="../img/bt50/06-1600.jpg" srcset="../img/bt50/06-800.jpg 534w, ../img/bt50/06-1600.jpg 1067w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1067" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (7)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (7)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (7)"></figure>
+      <figure class="plate"><img src="../img/bt50/07-1600.jpg" srcset="../img/bt50/07-800.jpg 800w, ../img/bt50/07-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="826" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (8)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (8)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (8)"></figure>
+      <figure class="plate"><img src="../img/bt50/08-1600.jpg" srcset="../img/bt50/08-800.jpg 533w, ../img/bt50/08-1600.jpg 1067w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1067" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (9)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (9)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (9)"></figure>
+      <figure class="plate"><img src="../img/bt50/09-1600.jpg" srcset="../img/bt50/09-800.jpg 533w, ../img/bt50/09-1600.jpg 1067w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1067" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (10)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (10)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (10)"></figure>
+      <figure class="plate"><img src="../img/bt50/10-1600.jpg" srcset="../img/bt50/10-800.jpg 533w, ../img/bt50/10-1600.jpg 1067w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1067" height="1600" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (11)" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto (11)" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto (11)"></figure>
+
     </div>
 
     <nav class="proj-nav" aria-label="Proyectos">
@@ -135,7 +149,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
        sizes="26px" width="96" height="98" loading="lazy" alt="">
   <span>© 2026 Rodrigo Arce</span>
   <a href="mailto:RodArCen@outlook.com">RodArCen@outlook.com</a>
-  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" rel="noopener">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   <span class="sep" data-es="Mérida, Yucatán, México" data-en="Mérida, Yucatán, Mexico">Mérida, Yucatán, México</span>
 </footer>
 

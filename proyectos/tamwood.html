@@ -48,10 +48,14 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
       <a href="../index.html#sobre-mi" data-es="Sobre mí" data-en="About">Sobre mí</a>
       <a href="../index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
-    <div class="controls">
-      <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
-      <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
-      <button class="ctrl" type="button" data-theme-btn aria-label="Cambiar tema">Oscuro</button>
+    <div class="head-end">
+      <div class="controls">
+        <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+        <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+        <button class="ctrl ctrl-theme" type="button" data-theme-btn
+                data-aria-es="Cambiar a modo oscuro" data-aria-en="Switch to dark mode"
+                aria-label="Cambiar a modo oscuro"><svg class="ico ico-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.5 6.5 4.9 4.9M19.1 19.1l-1.6-1.6M17.5 6.5l1.6-1.6M4.9 19.1l1.6-1.6"/></svg><svg class="ico ico-moon" viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M20.4 14.5A8.6 8.6 0 0 1 9.5 3.6a.7.7 0 0 0-.9-.9 9.9 9.9 0 1 0 12.7 12.7.7.7 0 0 0-.9-.9z"/></svg></button>
+      </div>
     </div>
   </div>
 </header>
@@ -62,9 +66,19 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     <section class="proj-head">
       <a class="proj-back" href="../index.html#proyectos"
          data-es="← Todos los proyectos" data-en="← All work">← Todos los proyectos</a>
-      <p class="card-num">05</p>
-      <h1 data-es="Fotografía de perfil profesional para Tamwood International College" data-en="Professional profile photography for Tamwood International College">Fotografía de perfil profesional para Tamwood International College</h1>
-      <p class="proj-lede" data-es="Fotografía profesional para los alumnos de Tamwood International College." data-en="Professional photography for the students of Tamwood International College.">Fotografía profesional para los alumnos de Tamwood International College.</p>
+
+      <div class="proj-hero">
+        <figure class="proj-media">
+          <video class="head-video" muted loop playsinline preload="none"
+                 poster="../img/tamwood/head-poster.jpg" width="414" height="248"
+                 data-src="../img/tamwood/head.mp4" aria-hidden="true"></video>
+        </figure>
+        <div class="proj-copy">
+  <p class="card-num">05</p>
+  <h1 data-es="Fotografía de perfil profesional para Tamwood International College" data-en="Professional profile photography for Tamwood International College">Fotografía de perfil profesional para Tamwood International College</h1>
+  <p class="proj-lede" data-es="Fotografía profesional para los alumnos de Tamwood International College." data-en="Professional photography for the students of Tamwood International College.">Fotografía profesional para los alumnos de Tamwood International College.</p>
+        </div>
+      </div>
     </section>
 
     <dl class="facts">
@@ -102,11 +116,23 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     </section>
 
     <div class="plates">
-      <figure class="plate"><img src="../img/tamwood/portada-1400.jpg" srcset="../img/tamwood/portada-700.jpg 700w, ../img/tamwood/portada-1400.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1240" loading="eager" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College" data-alt-en="Studio headshot of a Tamwood International College student" alt="Retrato profesional en estudio de un alumno de Tamwood International College" fetchpriority="high"></figure>
-      <figure class="plate"><img src="../img/tamwood/01-1600.jpg" srcset="../img/tamwood/01-800.jpg 800w, ../img/tamwood/01-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (2)" data-alt-en="Studio headshot of a Tamwood International College student (2)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (2)"></figure>
-      <figure class="plate"><img src="../img/tamwood/02-1600.jpg" srcset="../img/tamwood/02-800.jpg 800w, ../img/tamwood/02-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (3)" data-alt-en="Studio headshot of a Tamwood International College student (3)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (3)"></figure>
-      <figure class="plate"><img src="../img/tamwood/03-1600.jpg" srcset="../img/tamwood/03-800.jpg 800w, ../img/tamwood/03-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (4)" data-alt-en="Studio headshot of a Tamwood International College student (4)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (4)"></figure>
-      <figure class="plate"><img src="../img/tamwood/04-1600.jpg" srcset="../img/tamwood/04-800.jpg 630w, ../img/tamwood/04-1600.jpg 630w" sizes="(min-width:1240px) 1240px, 100vw" width="630" height="632" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (5)" data-alt-en="Studio headshot of a Tamwood International College student (5)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (5)"></figure>
+      <figure class="plate"><img src="../img/tamwood/01-1600.jpg" srcset="../img/tamwood/01-800.jpg 800w, ../img/tamwood/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (2)" data-alt-en="Studio headshot of a Tamwood International College student (2)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (2)"></figure>
+      <figure class="plate plate--video">
+        <video class="vid" controls playsinline preload="none"
+               poster="../img/tamwood/video-poster.jpg" width="470" height="784"
+               data-aria-es="Recap del LinkedIn Picture Day para Tamwood International College"
+               data-aria-en="LinkedIn Picture Day recap for Tamwood International College"
+               aria-label="Recap del LinkedIn Picture Day para Tamwood International College">
+          <source src="../img/tamwood/video.mp4" type="video/mp4">
+        </video>
+        <figcaption class="plate-cap"
+                    data-es="Recap del LinkedIn Picture Day"
+                    data-en="LinkedIn Picture Day recap">Recap del LinkedIn Picture Day</figcaption>
+      </figure>
+      <figure class="plate"><img src="../img/tamwood/02-1600.jpg" srcset="../img/tamwood/02-800.jpg 800w, ../img/tamwood/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (3)" data-alt-en="Studio headshot of a Tamwood International College student (3)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (3)"></figure>
+      <figure class="plate"><img src="../img/tamwood/03-1600.jpg" srcset="../img/tamwood/03-800.jpg 800w, ../img/tamwood/03-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (4)" data-alt-en="Studio headshot of a Tamwood International College student (4)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (4)"></figure>
+      <figure class="plate"><img src="../img/tamwood/04-1600.jpg" srcset="../img/tamwood/04-800.jpg 630w, ../img/tamwood/04-1600.jpg 630w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="630" height="632" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (5)" data-alt-en="Studio headshot of a Tamwood International College student (5)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (5)"></figure>
+
     </div>
 
     <nav class="proj-nav" aria-label="Proyectos">
@@ -129,7 +155,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
        sizes="26px" width="96" height="98" loading="lazy" alt="">
   <span>© 2026 Rodrigo Arce</span>
   <a href="mailto:RodArCen@outlook.com">RodArCen@outlook.com</a>
-  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" rel="noopener">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   <span class="sep" data-es="Mérida, Yucatán, México" data-en="Mérida, Yucatán, Mexico">Mérida, Yucatán, México</span>
 </footer>
 

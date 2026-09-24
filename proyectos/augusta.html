@@ -48,10 +48,14 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
       <a href="../index.html#sobre-mi" data-es="Sobre mí" data-en="About">Sobre mí</a>
       <a href="../index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
-    <div class="controls">
-      <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
-      <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
-      <button class="ctrl" type="button" data-theme-btn aria-label="Cambiar tema">Oscuro</button>
+    <div class="head-end">
+      <div class="controls">
+        <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+        <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+        <button class="ctrl ctrl-theme" type="button" data-theme-btn
+                data-aria-es="Cambiar a modo oscuro" data-aria-en="Switch to dark mode"
+                aria-label="Cambiar a modo oscuro"><svg class="ico ico-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.5 6.5 4.9 4.9M19.1 19.1l-1.6-1.6M17.5 6.5l1.6-1.6M4.9 19.1l1.6-1.6"/></svg><svg class="ico ico-moon" viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M20.4 14.5A8.6 8.6 0 0 1 9.5 3.6a.7.7 0 0 0-.9-.9 9.9 9.9 0 1 0 12.7 12.7.7.7 0 0 0-.9-.9z"/></svg></button>
+      </div>
     </div>
   </div>
 </header>
@@ -62,9 +66,19 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     <section class="proj-head">
       <a class="proj-back" href="../index.html#proyectos"
          data-es="← Todos los proyectos" data-en="← All work">← Todos los proyectos</a>
-      <p class="card-num">03</p>
-      <h1 data-es="Diseño para una marca de ropa deportiva" data-en="Design for a sportswear brand">Diseño para una marca de ropa deportiva</h1>
-      <p class="proj-lede" data-es="Diseño de producto para una marca de ropa deportiva." data-en="Product design for a sportswear brand.">Diseño de producto para una marca de ropa deportiva.</p>
+
+      <div class="proj-hero">
+        <figure class="proj-media">
+          <img src="../img/augusta/head.jpg" sizes="100vw" width="662" height="441"
+               loading="eager" decoding="async" fetchpriority="high"
+               alt="" aria-hidden="true">
+        </figure>
+        <div class="proj-copy">
+  <p class="card-num">03</p>
+  <h1 data-es="Diseño para una marca de ropa deportiva" data-en="Design for a sportswear brand">Diseño para una marca de ropa deportiva</h1>
+  <p class="proj-lede" data-es="Diseño de producto para una marca de ropa deportiva." data-en="Product design for a sportswear brand.">Diseño de producto para una marca de ropa deportiva.</p>
+        </div>
+      </div>
     </section>
 
     <dl class="facts">
@@ -102,10 +116,48 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     </section>
 
     <div class="plates">
-      <figure class="plate"><img src="../img/augusta/portada-1400.jpg" srcset="../img/augusta/portada-700.jpg 700w, ../img/augusta/portada-1400.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1240" loading="eager" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands" data-alt-en="Sports jersey design for Augusta Sportswear Brands" alt="Diseño de jersey deportivo para Augusta Sportswear Brands" fetchpriority="high"></figure>
-      <figure class="plate"><img src="../img/augusta/01-1600.jpg" srcset="../img/augusta/01-800.jpg 800w, ../img/augusta/01-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands (2)" data-alt-en="Sports jersey design for Augusta Sportswear Brands (2)" alt="Diseño de jersey deportivo para Augusta Sportswear Brands (2)"></figure>
-      <figure class="plate"><img src="../img/augusta/02-1600.jpg" srcset="../img/augusta/02-800.jpg 800w, ../img/augusta/02-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands (3)" data-alt-en="Sports jersey design for Augusta Sportswear Brands (3)" alt="Diseño de jersey deportivo para Augusta Sportswear Brands (3)"></figure>
-      <figure class="plate"><img src="../img/augusta/03-1600.jpg" srcset="../img/augusta/03-800.jpg 800w, ../img/augusta/03-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands (4)" data-alt-en="Sports jersey design for Augusta Sportswear Brands (4)" alt="Diseño de jersey deportivo para Augusta Sportswear Brands (4)"></figure>
+      <figure class="plate"><img src="../img/augusta/01-1600.jpg" srcset="../img/augusta/01-800.jpg 800w, ../img/augusta/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands (2)" data-alt-en="Sports jersey design for Augusta Sportswear Brands (2)" alt="Diseño de jersey deportivo para Augusta Sportswear Brands (2)"></figure>
+      <figure class="plate plate--loop">
+        <video muted loop playsinline preload="none"
+               poster="../img/augusta/video-01-poster.jpg" width="576" height="604"
+               data-src="../img/augusta/video-01.mp4"
+               data-aria-es="Animación de un jersey de béisbol en camuflaje beige con el número 14"
+               data-aria-en="Animation of a beige camouflage baseball jersey with the number 14"
+               aria-label="Animación de un jersey de béisbol en camuflaje beige con el número 14"></video>
+      </figure>
+      <figure class="plate"><img src="../img/augusta/02-1600.jpg" srcset="../img/augusta/02-800.jpg 800w, ../img/augusta/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands (3)" data-alt-en="Sports jersey design for Augusta Sportswear Brands (3)" alt="Diseño de jersey deportivo para Augusta Sportswear Brands (3)"></figure>
+      <figure class="plate plate--loop">
+        <video muted loop playsinline preload="none"
+               poster="../img/augusta/video-02-poster.jpg" width="576" height="570"
+               data-src="../img/augusta/video-02.mp4"
+               data-aria-es="Animación de un jersey de béisbol vino y dorado con el número 36"
+               data-aria-en="Animation of a maroon and gold baseball jersey with the number 36"
+               aria-label="Animación de un jersey de béisbol vino y dorado con el número 36"></video>
+      </figure>
+      <figure class="plate plate--loop">
+        <video muted loop playsinline preload="none"
+               poster="../img/augusta/video-03-poster.jpg" width="588" height="648"
+               data-src="../img/augusta/video-03.mp4"
+               data-aria-es="Animación de un jersey de béisbol en camuflaje blanco y naranja"
+               data-aria-en="Animation of a white and orange camouflage baseball jersey"
+               aria-label="Animación de un jersey de béisbol en camuflaje blanco y naranja"></video>
+      </figure>
+      <figure class="plate plate--loop">
+        <video muted loop playsinline preload="none"
+               poster="../img/augusta/video-04-poster.jpg" width="476" height="548"
+               data-src="../img/augusta/video-04.mp4"
+               data-aria-es="Animación de un jersey de fútbol americano negro y rojo con el número 23"
+               data-aria-en="Animation of a black and red American football jersey with the number 23"
+               aria-label="Animación de un jersey de fútbol americano negro y rojo con el número 23"></video>
+      </figure>
+      <figure class="plate plate--loop">
+        <video muted loop playsinline preload="none"
+               poster="../img/augusta/video-05-poster.jpg" width="376" height="550"
+               data-src="../img/augusta/video-05.mp4"
+               data-aria-es="Animación de un uniforme de voleibol rojo y azul marino"
+               data-aria-en="Animation of a red and navy volleyball uniform"
+               aria-label="Animación de un uniforme de voleibol rojo y azul marino"></video>
+      </figure>
     </div>
 
     <nav class="proj-nav" aria-label="Proyectos">
@@ -128,7 +180,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
        sizes="26px" width="96" height="98" loading="lazy" alt="">
   <span>© 2026 Rodrigo Arce</span>
   <a href="mailto:RodArCen@outlook.com">RodArCen@outlook.com</a>
-  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" rel="noopener">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   <span class="sep" data-es="Mérida, Yucatán, México" data-en="Mérida, Yucatán, Mexico">Mérida, Yucatán, México</span>
 </footer>
 

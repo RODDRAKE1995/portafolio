@@ -29,6 +29,7 @@
 (function(){try{var t=localStorage.getItem('theme');
 if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);
 var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElement.setAttribute('lang',l);
+document.documentElement.classList.add('anim');
 }catch(e){}})();
 </script>
 </head>
@@ -48,143 +49,239 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
       <a href="index.html#sobre-mi" data-es="Sobre mí" data-en="About">Sobre mí</a>
       <a href="index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
-    <div class="controls">
-      <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
-      <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
-      <button class="ctrl" type="button" data-theme-btn aria-label="Cambiar tema">Oscuro</button>
+    <div class="head-end">
+      <div class="controls">
+        <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+        <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+        <button class="ctrl ctrl-theme" type="button" data-theme-btn
+                data-aria-es="Cambiar a modo oscuro" data-aria-en="Switch to dark mode"
+                aria-label="Cambiar a modo oscuro"><svg class="ico ico-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.5 6.5 4.9 4.9M19.1 19.1l-1.6-1.6M17.5 6.5l1.6-1.6M4.9 19.1l1.6-1.6"/></svg><svg class="ico ico-moon" viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M20.4 14.5A8.6 8.6 0 0 1 9.5 3.6a.7.7 0 0 0-.9-.9 9.9 9.9 0 1 0 12.7 12.7.7.7 0 0 0-.9-.9z"/></svg></button>
+      </div>
     </div>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="hero wrap">
+  <section class="hero wrap" id="inicio">
     <div class="hero-card">
       <div class="hero-mesh" aria-hidden="true"></div>
-      <h1 class="hero-lede" data-es="Rodrigo Arce es diseñador gráfico y analista de marketing en Mérida. Desarrolla marcas, campañas y fotografía de producto, del concepto al arte final." data-en="Rodrigo Arce is a graphic designer and marketing analyst based in Mérida, shaping brands, campaigns and product photography from concept to final art.">Rodrigo Arce es diseñador gráfico y analista de marketing en Mérida. Desarrolla marcas, campañas y fotografía de producto, del concepto al arte final.</h1>
-      <p class="hero-meta">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-3.9 0-7 3.1-7 7 0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-        <span data-es="Mérida" data-en="Mérida">Mérida</span>
-      </p>
-    </div>
-  </section>
 
-  <section class="sec wrap" id="proyectos">
-    <div class="sec-head">
-      <h2 data-es="Proyectos" data-en="Selected work">Proyectos</h2>
-      <span>2018 — 2025</span>
-    </div>
-    <div class="grid">
-      <a class="card" href="proyectos/joyerati.html">
-        <div class="card-img"><img src="img/joyerati/portada-1400.jpg" srcset="img/joyerati/portada-700.jpg 700w, img/joyerati/portada-1400.jpg 1240w" sizes="(min-width:720px) 48vw, 94vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro"></div>
-        <div class="card-reveal">
-          <p class="card-num">01</p>
-          <h3 data-es="Marketing y branding para Joyerati Mx" data-en="Marketing and branding for Joyerati Mx">Marketing y branding para Joyerati Mx</h3>
-          <p class="card-tipo" data-es="Joyerati Mx · 2019" data-en="Joyerati Mx · 2019">Joyerati Mx · 2019</p>
+      <div class="hero-copy">
+        <p class="hero-tag rvl" style="--d:.02s"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M12 2c-3.9 0-7 3.1-7 7 0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span data-es="Mérida, México" data-en="Mérida, Mexico">Mérida, México</span></p>
+        <h1 class="hero-title">
+          <span class="ln t-sans rvl" style="--d:.10s"><span class="w" data-es="Diseño" data-en="I design">Diseño</span></span>
+          <span class="ln t-italic rvl" style="--d:.20s"><span class="w" data-es="experiencias" data-en="experiences">experiencias</span></span>
+          <span class="ln t-serif rvl" style="--d:.30s"><span class="w" data-es="que inspiran" data-en="that inspire">que inspiran</span></span>
+        </h1>
+        <p class="hero-lede rvl" style="--d:.42s" data-es="Rodrigo es diseñador gráfico y analista de marketing; lleva más de 5 años dando forma a marcas." data-en="Rodrigo is a graphic designer and marketing analyst who has spent 5+ years shaping brands.">Rodrigo es diseñador gráfico y analista de marketing; lleva más de 5 años dando forma a marcas.</p>
+        <p class="hero-quote rvl" style="--d:.50s" data-es="“Creo que el buen diseño empieza por entender a las personas. Uso intuición y datos para contar historias que se quedan.”" data-en="“I believe great design starts with understanding people. I use both intuition and data to tell stories that stick.”">“Creo que el buen diseño empieza por entender a las personas. Uso intuición y datos para contar historias que se quedan.”</p>
+        <div class="hero-actions rvl" style="--d:.58s">
+          <a class="pill pill--ghost" href="#proyectos" data-es="Ver proyectos" data-en="View work">Ver proyectos</a>
+          <a class="talk" href="#contacto">
+            <span class="talk-txt" data-es="Hablemos" data-en="Let’s talk">Hablemos</span>
+            <span class="talk-ico"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+          </a>
         </div>
-      </a>
-      <a class="card" href="proyectos/sportbowl.html">
-        <div class="card-img"><img src="img/sportbowl/portada-1400.jpg" srcset="img/sportbowl/portada-700.jpg 700w, img/sportbowl/portada-1400.jpg 1240w" sizes="(min-width:720px) 48vw, 94vw" width="1240" height="710" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos"></div>
-        <div class="card-reveal">
-          <p class="card-num">02</p>
-          <h3 data-es="Marketing y análisis de negocio para Sport Bowl Mérida" data-en="Marketing and business analytics for Sport Bowl Mérida">Marketing y análisis de negocio para Sport Bowl Mérida</h3>
-          <p class="card-tipo" data-es="Sport Bowl Mérida · 2018" data-en="Sport Bowl Mérida · 2018">Sport Bowl Mérida · 2018</p>
-        </div>
-      </a>
-      <a class="card" href="proyectos/augusta.html">
-        <div class="card-img"><img src="img/augusta/portada-1400.jpg" srcset="img/augusta/portada-700.jpg 700w, img/augusta/portada-1400.jpg 1240w" sizes="(min-width:720px) 48vw, 94vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands" data-alt-en="Sports jersey design for Augusta Sportswear Brands" alt="Diseño de jersey deportivo para Augusta Sportswear Brands"></div>
-        <div class="card-reveal">
-          <p class="card-num">03</p>
-          <h3 data-es="Diseño para una marca de ropa deportiva" data-en="Design for a sportswear brand">Diseño para una marca de ropa deportiva</h3>
-          <p class="card-tipo" data-es="Augusta Sportswear Brands · 2020" data-en="Augusta Sportswear Brands · 2020">Augusta Sportswear Brands · 2020</p>
-        </div>
-      </a>
-      <a class="card" href="proyectos/lisbeth.html">
-        <div class="card-img"><img src="img/lisbeth/portada-1400.jpg" srcset="img/lisbeth/portada-700.jpg 700w, img/lisbeth/portada-1400.jpg 1240w" sizes="(min-width:720px) 48vw, 94vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor"></div>
-        <div class="card-reveal">
-          <p class="card-num">04</p>
-          <h3 data-es="Fotografía para Lisbeth Herrera Realtor" data-en="Photography for Lisbeth Herrera Realtor">Fotografía para Lisbeth Herrera Realtor</h3>
-          <p class="card-tipo" data-es="Lisbeth Herrera Realtor · 2025" data-en="Lisbeth Herrera Realtor · 2025">Lisbeth Herrera Realtor · 2025</p>
-        </div>
-      </a>
-      <a class="card" href="proyectos/tamwood.html">
-        <div class="card-img"><img src="img/tamwood/portada-1400.jpg" srcset="img/tamwood/portada-700.jpg 700w, img/tamwood/portada-1400.jpg 1240w" sizes="(min-width:720px) 48vw, 94vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College" data-alt-en="Studio headshot of a Tamwood International College student" alt="Retrato profesional en estudio de un alumno de Tamwood International College"></div>
-        <div class="card-reveal">
-          <p class="card-num">05</p>
-          <h3 data-es="Fotografía de perfil profesional para Tamwood International College" data-en="Professional profile photography for Tamwood International College">Fotografía de perfil profesional para Tamwood International College</h3>
-          <p class="card-tipo" data-es="Tamwood International College · 2024" data-en="Tamwood International College · 2024">Tamwood International College · 2024</p>
-        </div>
-      </a>
-      <a class="card" href="proyectos/bt50.html">
-        <div class="card-img"><img src="img/bt50/portada-1400.jpg" srcset="img/bt50/portada-700.jpg 700w, img/bt50/portada-1400.jpg 1240w" sizes="(min-width:720px) 48vw, 94vw" width="1240" height="826" loading="lazy" decoding="async" data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto"></div>
-        <div class="card-reveal">
-          <p class="card-num">06</p>
-          <h3 data-es="Fotografía deportiva para Super Sand — Torneo BT50 Beach Tennis 2024" data-en="Sports photography for Super Sand — 2024 BT50 Beach Tennis Tournament">Fotografía deportiva para Super Sand — Torneo BT50 Beach Tennis 2024</h3>
-          <p class="card-tipo" data-es="Torneo BT50 Beach Tennis 2024 · 2024" data-en="Torneo BT50 Beach Tennis 2024 · 2024">Torneo BT50 Beach Tennis 2024 · 2024</p>
-        </div>
-      </a>
-    </div>
-  </section>
+      </div>
 
-  <section class="sec wrap" id="sobre-mi">
-    <div class="sec-head">
-      <h2 data-es="Sobre mí" data-en="About">Sobre mí</h2>
-    </div>
-    <div class="about">
-      <div class="about-photo">
+      <figure class="hero-photo rvl rvl-img" style="--d:.16s">
         <img src="img/perfil/rodrigo-1100.jpg"
              srcset="img/perfil/rodrigo-550.jpg 412w, img/perfil/rodrigo-1100.jpg 825w"
-             sizes="(min-width:820px) 38vw, 92vw" width="825" height="1100"
-             loading="lazy" decoding="async"
+             sizes="(min-width:820px) 46vw, 92vw" width="825" height="1100"
+             fetchpriority="high" decoding="async"
              data-alt-es="Retrato de Rodrigo Arce" data-alt-en="Portrait of Rodrigo Arce"
              alt="Retrato de Rodrigo Arce">
-      </div>
-      <div class="about-text">
-        <p data-es="Diseñador gráfico con más de 5 años de trabajo en identidad y campaña para marcas de retail, entretenimiento y servicios. Trabajo de punta a punta — concepto, dirección de arte, fotografía y arte final — para que cada pieza se sostenga desde el shooting hasta el banner impreso y el feed de redes." data-en="Graphic designer with 5+ years of identity and campaign work for retail, entertainment and service brands. I work end to end — concept, art direction, photography and final artwork — so every piece holds together from the shoot to the printed banner to the social feed.">Diseñador gráfico con más de 5 años de trabajo en identidad y campaña para marcas de retail, entretenimiento y servicios. Trabajo de punta a punta — concepto, dirección de arte, fotografía y arte final — para que cada pieza se sostenga desde el shooting hasta el banner impreso y el feed de redes.</p>
-        <p data-es="Mi objetivo siempre es el mismo: respetar la identidad del negocio y potenciarla." data-en="My goal is always the same: respect the identity of the business and make it stronger.">Mi objetivo siempre es el mismo: respetar la identidad del negocio y potenciarla.</p>
-        <ul class="tools">
-        <li>Adobe Illustrator</li>
-        <li>Adobe Photoshop</li>
-        <li>Adobe InDesign</li>
-        <li data-es="Fotografía de producto" data-en="Product photography">Fotografía de producto</li>
-        </ul>
-        <div class="about-areas">
-          <h3 class="about-label" data-es="Áreas de trabajo" data-en="What I do">Áreas de trabajo</h3>
-          <ul class="services">
-            <li><span class="n">01</span><span class="t" data-es="Identidad" data-en="Identity">Identidad</span></li>
-            <li><span class="n">02</span><span class="t" data-es="Packaging" data-en="Packaging">Packaging</span></li>
-            <li><span class="n">03</span><span class="t" data-es="Piezas para redes" data-en="Social media assets">Piezas para redes</span></li>
-            <li><span class="n">04</span><span class="t" data-es="Editorial" data-en="Editorial">Editorial</span></li>
-            <li><span class="n">05</span><span class="t" data-es="Fotografía de producto" data-en="Product photography">Fotografía de producto</span></li>
-          </ul>
-        </div>
-      </div>
+      </figure>
+
+      <a class="hero-note rvl" style="--d:.70s" href="#contacto">
+        <span class="hero-note-txt">
+          <strong data-es="¿Tienes un proyecto en mente?" data-en="Have a project in mind?">¿Tienes un proyecto en mente?</strong>
+          <span data-es="Escríbeme y platicamos." data-en="Send me a note and let’s talk.">Escríbeme y platicamos.</span>
+        </span>
+        <span class="hero-note-ico"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 11.5l7-7M5.5 4.5h6v6"/></svg></span>
+      </a>
     </div>
   </section>
 
-  <section class="sec wrap contact" id="contacto">
-    <div class="sec-head">
-      <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+  <section class="sec work" id="proyectos" aria-roledescription="carrusel" data-aria-es="Proyectos" data-aria-en="Work" aria-label="Proyectos">
+    <div class="wrap">
+      <h2 class="work-title">
+        <span class="ln wt-lead rvl"><span class="w" data-es="Cada marca tiene una historia." data-en="Every brand has a story.">Cada marca tiene una historia.</span></span>
+        <span class="ln wt-claim rvl" style="--d:.14s"><span class="w" data-es="Estas son las que ayudé a contar." data-en="These are the ones I helped tell.">Estas son las que ayudé a contar.</span></span>
+      </h2>
     </div>
-    <p data-es="¿Tienes un proyecto en mente? Escríbeme y platicamos."
-       data-en="Have a project in mind? Send me a note and let's talk.">¿Tienes un proyecto en mente? Escríbeme y platicamos.</p>
-    <div class="links">
-      <a class="btn solid" href="mailto:RodArCen@outlook.com">RodArCen@outlook.com</a>
-      <a class="btn" href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" rel="noopener">LinkedIn</a>
-      <a class="btn" href="cv/cv-rodrigo-arce.pdf" download
-         data-es="Descargar CV (PDF)" data-en="Download CV (PDF)">Descargar CV (PDF)</a>
+
+    <div class="work-stage rvl" style="--d:.12s" data-carousel>
+      <ul class="work-track">
+        <li class="work-card">
+          <a href="proyectos/joyerati.html" draggable="false">
+            <span class="work-img"><img src="img/joyerati/portada-1400.jpg" srcset="img/joyerati/portada-700.jpg 700w, img/joyerati/portada-1400.jpg 1240w" sizes="340px" width="700" height="933"
+                   loading="eager" decoding="async" draggable="false"
+                   data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro"></span>
+            <span class="work-name">Joyerati Mx</span>
+          </a>
+        </li>
+        <li class="work-card">
+          <a href="proyectos/sportbowl.html" draggable="false">
+            <span class="work-img"><img src="img/sportbowl/portada-1400.jpg" srcset="img/sportbowl/portada-700.jpg 700w, img/sportbowl/portada-1400.jpg 1240w" sizes="340px" width="700" height="933"
+                   loading="eager" decoding="async" draggable="false"
+                   data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos"></span>
+            <span class="work-name">Sport Bowl Mérida</span>
+          </a>
+        </li>
+        <li class="work-card">
+          <a href="proyectos/augusta.html" draggable="false">
+            <span class="work-img"><img src="img/augusta/card.jpg" width="484" height="645"
+                   loading="eager" decoding="async" draggable="false"
+                   data-alt-es="Ficha de catálogo de uniforme de fútbol americano para Augusta Sportswear Brands" data-alt-en="Catalogue sheet for an American football uniform for Augusta Sportswear Brands" alt="Ficha de catálogo de uniforme de fútbol americano para Augusta Sportswear Brands"></span>
+            <span class="work-name">Augusta Sportswear</span>
+          </a>
+        </li>
+        <li class="work-card">
+          <a href="proyectos/lisbeth.html" draggable="false">
+            <span class="work-img"><img src="img/lisbeth/portada-1400.jpg" srcset="img/lisbeth/portada-700.jpg 700w, img/lisbeth/portada-1400.jpg 1240w" sizes="340px" width="700" height="933"
+                   loading="lazy" decoding="async" draggable="false"
+                   data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor"></span>
+            <span class="work-name">Lisbeth Herrera Realtor</span>
+          </a>
+        </li>
+        <li class="work-card">
+          <a href="proyectos/tamwood.html" draggable="false">
+            <span class="work-img"><img src="img/tamwood/portada-1400.jpg" srcset="img/tamwood/portada-700.jpg 700w, img/tamwood/portada-1400.jpg 1240w" sizes="340px" width="700" height="933"
+                   loading="lazy" decoding="async" draggable="false"
+                   data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College" data-alt-en="Studio headshot of a Tamwood International College student" alt="Retrato profesional en estudio de un alumno de Tamwood International College"></span>
+            <span class="work-name">Tamwood International College</span>
+          </a>
+        </li>
+        <li class="work-card">
+          <a href="proyectos/bt50.html" draggable="false">
+            <span class="work-img"><img src="img/bt50/portada-1400.jpg" srcset="img/bt50/portada-700.jpg 700w, img/bt50/portada-1400.jpg 1240w" sizes="340px" width="700" height="933"
+                   loading="lazy" decoding="async" draggable="false"
+                   data-alt-es="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto" data-alt-en="Player in action during the BT50 Beach Tennis Tournament in Toronto" alt="Jugador en acción durante el Torneo BT50 Beach Tennis en Toronto"></span>
+            <span class="work-name">BT50 Beach Tennis</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="wrap work-ctrl rvl" style="--d:.2s">
+      <button class="work-btn" type="button" data-dir="-1" data-aria-es="Proyecto anterior" data-aria-en="Previous project" aria-label="Proyecto anterior"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4"/></svg></button>
+      <button class="work-btn" type="button" data-dir="1" data-aria-es="Siguiente proyecto" data-aria-en="Next project" aria-label="Siguiente proyecto"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+    </div>
+  </section>
+
+  <section class="sec wrap about" id="sobre-mi">
+    <div class="about-col">
+      <p class="about-kicker rvl" data-es="Sobre mí" data-en="About">Sobre mí</p>
+      <p class="about-lede rvl" style="--d:.06s" data-es="Diseñador gráfico con más de 5 años de trabajo en identidad y campaña para marcas de retail, entretenimiento y servicios. Trabajo de punta a punta — concepto, dirección de arte, fotografía y arte final — para que cada pieza se sostenga desde el shooting hasta el banner impreso y el feed de redes." data-en="Graphic designer with 5+ years of identity and campaign work for retail, entertainment and service brands. I work end to end — concept, art direction, photography and final artwork — so every piece holds together from the shoot to the printed banner to the social feed.">Diseñador gráfico con más de 5 años de trabajo en identidad y campaña para marcas de retail, entretenimiento y servicios. Trabajo de punta a punta — concepto, dirección de arte, fotografía y arte final — para que cada pieza se sostenga desde el shooting hasta el banner impreso y el feed de redes.</p>
+      <p class="about-credo rvl" style="--d:.12s" data-es="“Mi objetivo siempre es el mismo: respetar la identidad del negocio y potenciarla.”" data-en="“My goal is always the same: respect the identity of the business and make it stronger.”">“Mi objetivo siempre es el mismo: respetar la identidad del negocio y potenciarla.”</p>
+
+      <ul class="tools rvl" style="--d:.18s">
+          <li>Adobe Illustrator</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe InDesign</li>
+          <li>Figma</li>
+          <li>SQL</li>
+          <li data-es="Fotografía de producto" data-en="Product photography">Fotografía de producto</li>
+      </ul>
+
+      <div class="about-areas rvl" style="--d:.24s">
+        <p class="about-label" data-es="Áreas de trabajo" data-en="What I do">Áreas de trabajo</p>
+        <ul class="services">
+          <li><span class="n">01</span><span class="t" data-es="Identidad" data-en="Identity">Identidad</span></li>
+          <li><span class="n">02</span><span class="t" data-es="Packaging" data-en="Packaging">Packaging</span></li>
+          <li><span class="n">03</span><span class="t" data-es="Piezas para redes" data-en="Social media assets">Piezas para redes</span></li>
+          <li><span class="n">04</span><span class="t" data-es="Editorial" data-en="Editorial">Editorial</span></li>
+          <li><span class="n">05</span><span class="t" data-es="Fotografía de producto" data-en="Product photography">Fotografía de producto</span></li>
+          <li><span class="n">06</span><span class="t" data-es="Diseño web" data-en="Web design">Diseño web</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <figure class="about-photo rvl rvl-img" style="--d:.1s">
+      <picture>
+        <source type="image/webp"
+                srcset="img/perfil/rodrigo-about-560.webp 560w, img/perfil/rodrigo-about-1100.webp 1100w"
+                sizes="(min-width:900px) 40vw, 92vw">
+        <img src="img/perfil/rodrigo-about-1100.png"
+             srcset="img/perfil/rodrigo-about-560.png 560w, img/perfil/rodrigo-about-1100.png 1100w"
+             sizes="(min-width:900px) 40vw, 92vw" width="1100" height="1619"
+             loading="lazy" decoding="async"
+             data-alt-es="Rodrigo Arce con su cámara, retrato en blanco y negro"
+             data-alt-en="Rodrigo Arce holding his camera, black and white portrait"
+             alt="Rodrigo Arce con su cámara, retrato en blanco y negro">
+      </picture>
+    </figure>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="wrap contact-grid">
+
+      <div class="contact-say">
+        <h2 class="contact-title">
+          <span class="ln rvl"><span class="w" data-es="Trabajemos" data-en="Let’s work">Trabajemos</span></span>
+          <span class="ln rvl" style="--d:.12s"><span class="w" data-es="juntos." data-en="together.">juntos.</span></span>
+        </h2>
+        <p class="contact-note rvl" style="--d:.24s"
+           data-es="¿Tienes un proyecto en mente? Cuéntame de qué se trata y te respondo pronto."
+           data-en="Have a project in mind? Tell me what it is about and I’ll get back to you soon.">¿Tienes un proyecto en mente? Cuéntame de qué se trata y te respondo pronto.</p>
+      </div>
+
+      <div class="contact-do rvl" style="--d:.12s">
+        <!-- Los mensajes llegan a tu correo a través de Formspree.
+             Si algún día cambias de cuenta o de formulario, solo sustituye
+             la dirección de action=" " por la nueva. -->
+        <form class="form" action="https://formspree.io/f/xzezgjyj" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
+          <div class="field">
+            <input type="text" id="f-nombre" name="name" placeholder=" " required autocomplete="name">
+            <label for="f-nombre" data-es="Nombre" data-en="Name">Nombre</label>
+          </div>
+          <div class="field">
+            <input type="email" id="f-correo" name="email" placeholder=" " required autocomplete="email">
+            <label for="f-correo" data-es="Correo" data-en="Email">Correo</label>
+          </div>
+          <div class="field">
+            <textarea id="f-mensaje" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="f-mensaje" data-es="Mensaje" data-en="Message">Mensaje</label>
+          </div>
+          <button class="talk form-send" type="submit">
+            <span class="talk-txt" data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</span>
+            <span class="talk-ico"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+          </button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-side">
+          <div>
+            <p class="about-label" data-es="Escríbeme" data-en="Write to me">Escríbeme</p>
+            <a class="contact-mail" href="mailto:RodArCen@outlook.com">RodArCen@outlook.com</a>
+            <a class="contact-cv" href="cv/cv-rodrigo-arce.pdf" download
+               data-es="Descargar CV (PDF)" data-en="Download CV (PDF)">Descargar CV (PDF)</a>
+          </div>
+          <div>
+            <p class="about-label" data-es="Redes" data-en="Social">Redes</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21h-4z"/></svg><span>LinkedIn</span></a>
+              <a href="https://www.instagram.com/rodri.arcen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
 </main>
 
-<footer class="site-foot wrap">
+<footer class="site-foot wrap rvl">
   <img class="foot-mark" src="img/marca/monograma-96.png"
        srcset="img/marca/monograma-96.png 96w, img/marca/monograma-192.png 192w"
        sizes="26px" width="96" height="98" loading="lazy" alt="">
   <span>© 2026 Rodrigo Arce</span>
   <a href="mailto:RodArCen@outlook.com">RodArCen@outlook.com</a>
-  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" rel="noopener">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   <span class="sep" data-es="Mérida, Yucatán, México" data-en="Mérida, Yucatán, Mexico">Mérida, Yucatán, México</span>
 </footer>
 

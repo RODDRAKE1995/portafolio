@@ -48,10 +48,14 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
       <a href="../index.html#sobre-mi" data-es="Sobre mí" data-en="About">Sobre mí</a>
       <a href="../index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
-    <div class="controls">
-      <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
-      <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
-      <button class="ctrl" type="button" data-theme-btn aria-label="Cambiar tema">Oscuro</button>
+    <div class="head-end">
+      <div class="controls">
+        <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+        <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+        <button class="ctrl ctrl-theme" type="button" data-theme-btn
+                data-aria-es="Cambiar a modo oscuro" data-aria-en="Switch to dark mode"
+                aria-label="Cambiar a modo oscuro"><svg class="ico ico-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.5 6.5 4.9 4.9M19.1 19.1l-1.6-1.6M17.5 6.5l1.6-1.6M4.9 19.1l1.6-1.6"/></svg><svg class="ico ico-moon" viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M20.4 14.5A8.6 8.6 0 0 1 9.5 3.6a.7.7 0 0 0-.9-.9 9.9 9.9 0 1 0 12.7 12.7.7.7 0 0 0-.9-.9z"/></svg></button>
+      </div>
     </div>
   </div>
 </header>
@@ -62,9 +66,19 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     <section class="proj-head">
       <a class="proj-back" href="../index.html#proyectos"
          data-es="← Todos los proyectos" data-en="← All work">← Todos los proyectos</a>
-      <p class="card-num">04</p>
-      <h1 data-es="Fotografía para Lisbeth Herrera Realtor" data-en="Photography for Lisbeth Herrera Realtor">Fotografía para Lisbeth Herrera Realtor</h1>
-      <p class="proj-lede" data-es="Fotografía de evento para una empresa de bienes raíces." data-en="Event photography for a real estate company.">Fotografía de evento para una empresa de bienes raíces.</p>
+
+      <div class="proj-hero">
+        <figure class="proj-media">
+          <video class="head-video" muted loop playsinline preload="none"
+                 poster="../img/lisbeth/head-poster.jpg" width="1280" height="720"
+                 data-src="../img/lisbeth/head.mp4" aria-hidden="true"></video>
+        </figure>
+        <div class="proj-copy">
+  <p class="card-num">04</p>
+  <h1 data-es="Fotografía para Lisbeth Herrera Realtor" data-en="Photography for Lisbeth Herrera Realtor">Fotografía para Lisbeth Herrera Realtor</h1>
+  <p class="proj-lede" data-es="Fotografía de evento para una empresa de bienes raíces." data-en="Event photography for a real estate company.">Fotografía de evento para una empresa de bienes raíces.</p>
+        </div>
+      </div>
     </section>
 
     <dl class="facts">
@@ -102,15 +116,15 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     </section>
 
     <div class="plates">
-      <figure class="plate"><img src="../img/lisbeth/portada-1400.jpg" srcset="../img/lisbeth/portada-700.jpg 700w, ../img/lisbeth/portada-1400.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="992" loading="eager" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor" fetchpriority="high"></figure>
-      <figure class="plate"><img src="../img/lisbeth/01-1600.jpg" srcset="../img/lisbeth/01-800.jpg 800w, ../img/lisbeth/01-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (2)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (2)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (2)"></figure>
-      <figure class="plate"><img src="../img/lisbeth/02-1600.jpg" srcset="../img/lisbeth/02-800.jpg 800w, ../img/lisbeth/02-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (3)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (3)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (3)"></figure>
-      <figure class="plate"><img src="../img/lisbeth/03-1600.jpg" srcset="../img/lisbeth/03-800.jpg 800w, ../img/lisbeth/03-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (4)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (4)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (4)"></figure>
-      <figure class="plate"><img src="../img/lisbeth/04-1600.jpg" srcset="../img/lisbeth/04-800.jpg 800w, ../img/lisbeth/04-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (5)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (5)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (5)"></figure>
-      <figure class="plate"><img src="../img/lisbeth/05-1600.jpg" srcset="../img/lisbeth/05-800.jpg 800w, ../img/lisbeth/05-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (6)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (6)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (6)"></figure>
-      <figure class="plate"><img src="../img/lisbeth/06-1600.jpg" srcset="../img/lisbeth/06-800.jpg 450w, ../img/lisbeth/06-1600.jpg 900w" sizes="(min-width:1240px) 1240px, 100vw" width="900" height="1600" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (7)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (7)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (7)"></figure>
-      <figure class="plate"><img src="../img/lisbeth/07-1600.jpg" srcset="../img/lisbeth/07-800.jpg 450w, ../img/lisbeth/07-1600.jpg 900w" sizes="(min-width:1240px) 1240px, 100vw" width="900" height="1600" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (8)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (8)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (8)"></figure>
-      <figure class="plate"><img src="../img/lisbeth/08-1600.jpg" srcset="../img/lisbeth/08-800.jpg 450w, ../img/lisbeth/08-1600.jpg 900w" sizes="(min-width:1240px) 1240px, 100vw" width="900" height="1600" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (9)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (9)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (9)"></figure>
+      <figure class="plate"><img src="../img/lisbeth/01-1600.jpg" srcset="../img/lisbeth/01-800.jpg 800w, ../img/lisbeth/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (2)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (2)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (2)"></figure>
+      <figure class="plate"><img src="../img/lisbeth/02-1600.jpg" srcset="../img/lisbeth/02-800.jpg 800w, ../img/lisbeth/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (3)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (3)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (3)"></figure>
+      <figure class="plate"><img src="../img/lisbeth/03-1600.jpg" srcset="../img/lisbeth/03-800.jpg 800w, ../img/lisbeth/03-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (4)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (4)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (4)"></figure>
+      <figure class="plate"><img src="../img/lisbeth/04-1600.jpg" srcset="../img/lisbeth/04-800.jpg 800w, ../img/lisbeth/04-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (5)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (5)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (5)"></figure>
+      <figure class="plate"><img src="../img/lisbeth/05-1600.jpg" srcset="../img/lisbeth/05-800.jpg 800w, ../img/lisbeth/05-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="992" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (6)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (6)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (6)"></figure>
+      <figure class="plate"><img src="../img/lisbeth/06-1600.jpg" srcset="../img/lisbeth/06-800.jpg 450w, ../img/lisbeth/06-1600.jpg 900w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="900" height="1600" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (7)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (7)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (7)"></figure>
+      <figure class="plate"><img src="../img/lisbeth/07-1600.jpg" srcset="../img/lisbeth/07-800.jpg 450w, ../img/lisbeth/07-1600.jpg 900w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="900" height="1600" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (8)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (8)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (8)"></figure>
+      <figure class="plate"><img src="../img/lisbeth/08-1600.jpg" srcset="../img/lisbeth/08-800.jpg 450w, ../img/lisbeth/08-1600.jpg 900w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="900" height="1600" loading="lazy" decoding="async" data-alt-es="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (9)" data-alt-en="Family portrait on the fall set built for Lisbeth Herrera Realtor (9)" alt="Retrato familiar en el set de otoño montado para Lisbeth Herrera Realtor (9)"></figure>
+
     </div>
 
     <nav class="proj-nav" aria-label="Proyectos">
@@ -133,7 +147,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
        sizes="26px" width="96" height="98" loading="lazy" alt="">
   <span>© 2026 Rodrigo Arce</span>
   <a href="mailto:RodArCen@outlook.com">RodArCen@outlook.com</a>
-  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" rel="noopener">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   <span class="sep" data-es="Mérida, Yucatán, México" data-en="Mérida, Yucatán, Mexico">Mérida, Yucatán, México</span>
 </footer>
 

@@ -48,10 +48,14 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
       <a href="../index.html#sobre-mi" data-es="Sobre mí" data-en="About">Sobre mí</a>
       <a href="../index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
-    <div class="controls">
-      <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
-      <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
-      <button class="ctrl" type="button" data-theme-btn aria-label="Cambiar tema">Oscuro</button>
+    <div class="head-end">
+      <div class="controls">
+        <button class="ctrl" type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+        <button class="ctrl" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+        <button class="ctrl ctrl-theme" type="button" data-theme-btn
+                data-aria-es="Cambiar a modo oscuro" data-aria-en="Switch to dark mode"
+                aria-label="Cambiar a modo oscuro"><svg class="ico ico-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.5 6.5 4.9 4.9M19.1 19.1l-1.6-1.6M17.5 6.5l1.6-1.6M4.9 19.1l1.6-1.6"/></svg><svg class="ico ico-moon" viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M20.4 14.5A8.6 8.6 0 0 1 9.5 3.6a.7.7 0 0 0-.9-.9 9.9 9.9 0 1 0 12.7 12.7.7.7 0 0 0-.9-.9z"/></svg></button>
+      </div>
     </div>
   </div>
 </header>
@@ -62,9 +66,19 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     <section class="proj-head">
       <a class="proj-back" href="../index.html#proyectos"
          data-es="← Todos los proyectos" data-en="← All work">← Todos los proyectos</a>
-      <p class="card-num">02</p>
-      <h1 data-es="Marketing y análisis de negocio para Sport Bowl Mérida" data-en="Marketing and business analytics for Sport Bowl Mérida">Marketing y análisis de negocio para Sport Bowl Mérida</h1>
-      <p class="proj-lede" data-es="Diseño de campaña, fotografía y análisis de negocio para un boliche." data-en="Campaign design, photography and business analytics for a bowling alley.">Diseño de campaña, fotografía y análisis de negocio para un boliche.</p>
+
+      <div class="proj-hero">
+        <figure class="proj-media">
+          <video class="head-video" muted loop playsinline preload="none"
+                 poster="../img/sportbowl/head-poster.jpg" width="846" height="474"
+                 data-src="../img/sportbowl/head.mp4" aria-hidden="true"></video>
+        </figure>
+        <div class="proj-copy">
+  <p class="card-num">02</p>
+  <h1 data-es="Marketing y análisis de negocio para Sport Bowl Mérida" data-en="Marketing and business analytics for Sport Bowl Mérida">Marketing y análisis de negocio para Sport Bowl Mérida</h1>
+  <p class="proj-lede" data-es="Diseño de campaña, fotografía y análisis de negocio para un boliche." data-en="Campaign design, photography and business analytics for a bowling alley.">Diseño de campaña, fotografía y análisis de negocio para un boliche.</p>
+        </div>
+      </div>
     </section>
 
     <dl class="facts">
@@ -85,7 +99,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
     <section class="story">
       <div>
         <h2 data-es="Contexto" data-en="Context">Contexto</h2>
-        <p data-es="Responsable de estrategia comercial y desarrollo de producto, utilizando Google Analytics y revisión de reportes de ventas para identificar oportunidades y guiar decisiones de negocio." data-en="Responsible for commercial strategy and product development, using Google Analytics and sales report reviews to identify opportunities and guide business decisions.">Responsable de estrategia comercial y desarrollo de producto, utilizando Google Analytics y revisión de reportes de ventas para identificar oportunidades y guiar decisiones de negocio.</p>
+        <p data-es="Dirigí la estrategia de redes sociales y branding, utilizando Google Analytics y el análisis de reportes de ventas para identificar oportunidades y orientar las decisiones de marketing." data-en="I led the social media and branding strategy, using Google Analytics and sales report analysis to identify growth opportunities and guide marketing decisions.">Dirigí la estrategia de redes sociales y branding, utilizando Google Analytics y el análisis de reportes de ventas para identificar oportunidades y orientar las decisiones de marketing.</p>
       </div>
       <div>
         <h2 data-es="Mi rol" data-en="My role">Mi rol</h2>
@@ -97,21 +111,34 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
       </div>
       <div>
         <h2 data-es="Resultado" data-en="Outcome">Resultado</h2>
-        <p data-es="Se entregaron productos que atrajeron tanto al público regular como a nuevos clientes potenciales, al igual que campañas de marketing efectivas que aumentaron el reconocimiento de marca." data-en="The work delivered products that drew both regulars and new prospective customers, along with effective marketing campaigns that increased brand recognition.">Se entregaron productos que atrajeron tanto al público regular como a nuevos clientes potenciales, al igual que campañas de marketing efectivas que aumentaron el reconocimiento de marca.</p>
+        <p data-es="Combiné fotografía y diseño gráfico para crear banners llamativos para impresión y redes sociales. Además, analicé los reportes de ventas de productos para diseñar ofertas atractivas que reactivaron a los clientes existentes y atrajeron a nuevos." data-en="I combined photography and graphic design to create eye-catching print and social media banners, and used sales report analysis to design product offers that re-engaged existing customers and attracted new ones.">Combiné fotografía y diseño gráfico para crear banners llamativos para impresión y redes sociales. Además, analicé los reportes de ventas de productos para diseñar ofertas atractivas que reactivaron a los clientes existentes y atrajeron a nuevos.</p>
       </div>
     </section>
 
     <div class="plates">
-      <figure class="plate"><img src="../img/sportbowl/portada-1400.jpg" srcset="../img/sportbowl/portada-700.jpg 700w, ../img/sportbowl/portada-1400.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="710" loading="eager" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos" fetchpriority="high"></figure>
-      <figure class="plate"><img src="../img/sportbowl/01-1600.jpg" srcset="../img/sportbowl/01-800.jpg 800w, ../img/sportbowl/01-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1100" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (2)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (2)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (2)"></figure>
-      <figure class="plate"><img src="../img/sportbowl/02-1600.jpg" srcset="../img/sportbowl/02-800.jpg 800w, ../img/sportbowl/02-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1107" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (3)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (3)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (3)"></figure>
-      <figure class="plate"><img src="../img/sportbowl/03-1600.jpg" srcset="../img/sportbowl/03-800.jpg 800w, ../img/sportbowl/03-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="801" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (4)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (4)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (4)"></figure>
-      <figure class="plate"><img src="../img/sportbowl/04-1600.jpg" srcset="../img/sportbowl/04-800.jpg 800w, ../img/sportbowl/04-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="846" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (5)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (5)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (5)"></figure>
-      <figure class="plate"><img src="../img/sportbowl/05-1600.jpg" srcset="../img/sportbowl/05-800.jpg 800w, ../img/sportbowl/05-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="773" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (6)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (6)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (6)"></figure>
-      <figure class="plate"><img src="../img/sportbowl/06-1600.jpg" srcset="../img/sportbowl/06-800.jpg 800w, ../img/sportbowl/06-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (7)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (7)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (7)"></figure>
-      <figure class="plate"><img src="../img/sportbowl/07-1600.jpg" srcset="../img/sportbowl/07-800.jpg 786w, ../img/sportbowl/07-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1263" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (8)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (8)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (8)"></figure>
-      <figure class="plate"><img src="../img/sportbowl/08-1600.jpg" srcset="../img/sportbowl/08-800.jpg 800w, ../img/sportbowl/08-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="1099" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (9)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (9)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (9)"></figure>
-      <figure class="plate"><img src="../img/sportbowl/09-1600.jpg" srcset="../img/sportbowl/09-800.jpg 800w, ../img/sportbowl/09-1600.jpg 1240w" sizes="(min-width:1240px) 1240px, 100vw" width="1240" height="945" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (10)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (10)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (10)"></figure>
+      <figure class="plate"><img src="../img/sportbowl/portada-1400.jpg" srcset="../img/sportbowl/portada-700.jpg 700w, ../img/sportbowl/portada-1400.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="710" loading="eager" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos" fetchpriority="high"></figure>
+      <figure class="plate plate--video">
+        <video class="vid" controls playsinline preload="none"
+               poster="../img/sportbowl/video-poster.jpg" width="852" height="546"
+               data-aria-es="Spot de torneos empresariales para Sport Bowl Mérida"
+               data-aria-en="Corporate tournaments spot for Sport Bowl Mérida"
+               aria-label="Spot de torneos empresariales para Sport Bowl Mérida">
+          <source src="../img/sportbowl/video.mp4" type="video/mp4">
+        </video>
+        <figcaption class="plate-cap"
+                    data-es="Spot para la campaña de torneos empresariales"
+                    data-en="Spot for the corporate tournaments campaign">Spot para la campaña de torneos empresariales</figcaption>
+      </figure>
+      <figure class="plate"><img src="../img/sportbowl/01-1600.jpg" srcset="../img/sportbowl/01-800.jpg 800w, ../img/sportbowl/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1100" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (2)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (2)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (2)"></figure>
+      <figure class="plate"><img src="../img/sportbowl/02-1600.jpg" srcset="../img/sportbowl/02-800.jpg 800w, ../img/sportbowl/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1107" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (3)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (3)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (3)"></figure>
+      <figure class="plate"><img src="../img/sportbowl/03-1600.jpg" srcset="../img/sportbowl/03-800.jpg 800w, ../img/sportbowl/03-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="801" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (4)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (4)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (4)"></figure>
+      <figure class="plate"><img src="../img/sportbowl/04-1600.jpg" srcset="../img/sportbowl/04-800.jpg 800w, ../img/sportbowl/04-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="846" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (5)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (5)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (5)"></figure>
+      <figure class="plate"><img src="../img/sportbowl/05-1600.jpg" srcset="../img/sportbowl/05-800.jpg 800w, ../img/sportbowl/05-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="773" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (6)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (6)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (6)"></figure>
+      <figure class="plate"><img src="../img/sportbowl/06-1600.jpg" srcset="../img/sportbowl/06-800.jpg 800w, ../img/sportbowl/06-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (7)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (7)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (7)"></figure>
+      <figure class="plate"><img src="../img/sportbowl/07-1600.jpg" srcset="../img/sportbowl/07-800.jpg 786w, ../img/sportbowl/07-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1263" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (8)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (8)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (8)"></figure>
+      <figure class="plate"><img src="../img/sportbowl/08-1600.jpg" srcset="../img/sportbowl/08-800.jpg 800w, ../img/sportbowl/08-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1099" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (9)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (9)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (9)"></figure>
+      <figure class="plate"><img src="../img/sportbowl/09-1600.jpg" srcset="../img/sportbowl/09-800.jpg 800w, ../img/sportbowl/09-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="945" loading="lazy" decoding="async" data-alt-es="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (10)" data-alt-en="Campaign piece for Sport Bowl Mérida promoting game time and shoe rental (10)" alt="Pieza de campaña para Sport Bowl Mérida con promoción de juego y renta de zapatos (10)"></figure>
+
     </div>
 
     <nav class="proj-nav" aria-label="Proyectos">
@@ -134,7 +161,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
        sizes="26px" width="96" height="98" loading="lazy" alt="">
   <span>© 2026 Rodrigo Arce</span>
   <a href="mailto:RodArCen@outlook.com">RodArCen@outlook.com</a>
-  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" rel="noopener">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/rodrigo-arce-aa529742b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   <span class="sep" data-es="Mérida, Yucatán, México" data-en="Mérida, Yucatán, Mexico">Mérida, Yucatán, México</span>
 </footer>
 
