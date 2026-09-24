@@ -29,6 +29,7 @@
 (function(){try{var t=localStorage.getItem('theme');
 if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);
 var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElement.setAttribute('lang',l);
+document.documentElement.classList.add('anim');
 }catch(e){}})();
 </script>
 </head>
@@ -64,7 +65,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
   <div class="wrap">
 
     <section class="proj-head">
-      <a class="proj-back" href="../index.html#proyectos"
+      <a class="proj-back rvl" href="../index.html#proyectos"
          data-es="← Todos los proyectos" data-en="← All work">← Todos los proyectos</a>
 
       <div class="proj-hero">
@@ -74,50 +75,50 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
                  data-src="../img/tamwood/head.mp4" aria-hidden="true"></video>
         </figure>
         <div class="proj-copy">
-  <p class="card-num">05</p>
-  <h1 data-es="Fotografía de perfil profesional para Tamwood International College" data-en="Professional profile photography for Tamwood International College">Fotografía de perfil profesional para Tamwood International College</h1>
-  <p class="proj-lede" data-es="Fotografía profesional para los alumnos de Tamwood International College." data-en="Professional photography for the students of Tamwood International College.">Fotografía profesional para los alumnos de Tamwood International College.</p>
+  <p class="card-num rvl">05</p>
+  <h1 class="rvl" style="--d:.10s" data-es="Fotografía de perfil profesional para Tamwood International College" data-en="Professional profile photography for Tamwood International College">Fotografía de perfil profesional para Tamwood International College</h1>
+  <p class="proj-lede rvl" style="--d:.20s" data-es="Fotografía profesional para los alumnos de Tamwood International College." data-en="Professional photography for the students of Tamwood International College.">Fotografía profesional para los alumnos de Tamwood International College.</p>
         </div>
       </div>
     </section>
 
     <dl class="facts">
-      <div class="fact">
+      <div class="fact rvl" style="--d:0.00s">
         <dt data-es="Cliente" data-en="Client">Cliente</dt>
         <dd>Tamwood International College</dd>
       </div>
-      <div class="fact">
+      <div class="fact rvl" style="--d:0.08s">
         <dt data-es="Año" data-en="Year">Año</dt>
         <dd>2024</dd>
       </div>
-      <div class="fact">
+      <div class="fact rvl" style="--d:0.16s">
         <dt data-es="Tipo" data-en="Type">Tipo</dt>
         <dd data-es="Diseño gráfico · Fotografía" data-en="Graphic design · Photography">Diseño gráfico · Fotografía</dd>
       </div>
     </dl>
 
     <section class="story">
-      <div>
+      <div class="rvl" style="--d:0.00s">
         <h2 data-es="Contexto" data-en="Context">Contexto</h2>
         <p data-es="Un mismo sistema de estudio — fondo, iluminación y encuadre — aplicado a toda una generación de estudiantes para lograr retratos institucionales consistentes." data-en="A single studio system — background, lighting and framing — applied across an entire student cohort for consistent institutional headshots.">Un mismo sistema de estudio — fondo, iluminación y encuadre — aplicado a toda una generación de estudiantes para lograr retratos institucionales consistentes.</p>
       </div>
-      <div>
+      <div class="rvl" style="--d:0.10s">
         <h2 data-es="Mi rol" data-en="My role">Mi rol</h2>
         <p data-es="Desempeñé el papel de fotógrafo para todos los alumnos de un college en Canadá, como parte de un evento de fotografía para perfiles profesionales." data-en="I worked as photographer for all the students of a college in Canada, as part of a photography event for professional profiles.">Desempeñé el papel de fotógrafo para todos los alumnos de un college en Canadá, como parte de un evento de fotografía para perfiles profesionales.</p>
       </div>
-      <div>
+      <div class="rvl" style="--d:0.00s">
         <h2 data-es="Proceso" data-en="Process">Proceso</h2>
         <p data-es="Mi proceso fue pensar en una paleta de color acorde con la temática del evento y dirigir a las personas en el evento para obtener el mejor resultado." data-en="My process was to build a color palette matching the event&#x27;s theme and direct the people at the event to get the best result.">Mi proceso fue pensar en una paleta de color acorde con la temática del evento y dirigir a las personas en el evento para obtener el mejor resultado.</p>
       </div>
-      <div>
+      <div class="rvl" style="--d:0.10s">
         <h2 data-es="Resultado" data-en="Outcome">Resultado</h2>
         <p data-es="Se entregaron fotografías retocadas listas para publicación." data-en="Retouched photographs were delivered, ready for publication.">Se entregaron fotografías retocadas listas para publicación.</p>
       </div>
     </section>
 
     <div class="plates">
-      <figure class="plate"><img src="../img/tamwood/01-1600.jpg" srcset="../img/tamwood/01-800.jpg 800w, ../img/tamwood/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (2)" data-alt-en="Studio headshot of a Tamwood International College student (2)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (2)"></figure>
-      <figure class="plate plate--video">
+      <figure class="plate rvl rvl-img"><img src="../img/tamwood/01-1600.jpg" srcset="../img/tamwood/01-800.jpg 800w, ../img/tamwood/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (2)" data-alt-en="Studio headshot of a Tamwood International College student (2)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (2)"></figure>
+      <figure class="plate plate--video rvl">
         <video class="vid" controls playsinline preload="none"
                poster="../img/tamwood/video-poster.jpg" width="470" height="784"
                data-aria-es="Recap del LinkedIn Picture Day para Tamwood International College"
@@ -129,13 +130,13 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
                     data-es="Recap del LinkedIn Picture Day"
                     data-en="LinkedIn Picture Day recap">Recap del LinkedIn Picture Day</figcaption>
       </figure>
-      <figure class="plate"><img src="../img/tamwood/02-1600.jpg" srcset="../img/tamwood/02-800.jpg 800w, ../img/tamwood/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (3)" data-alt-en="Studio headshot of a Tamwood International College student (3)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (3)"></figure>
-      <figure class="plate"><img src="../img/tamwood/03-1600.jpg" srcset="../img/tamwood/03-800.jpg 800w, ../img/tamwood/03-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (4)" data-alt-en="Studio headshot of a Tamwood International College student (4)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (4)"></figure>
-      <figure class="plate"><img src="../img/tamwood/04-1600.jpg" srcset="../img/tamwood/04-800.jpg 630w, ../img/tamwood/04-1600.jpg 630w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="630" height="632" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (5)" data-alt-en="Studio headshot of a Tamwood International College student (5)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (5)"></figure>
+      <figure class="plate rvl rvl-img"><img src="../img/tamwood/02-1600.jpg" srcset="../img/tamwood/02-800.jpg 800w, ../img/tamwood/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (3)" data-alt-en="Studio headshot of a Tamwood International College student (3)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (3)"></figure>
+      <figure class="plate rvl rvl-img"><img src="../img/tamwood/03-1600.jpg" srcset="../img/tamwood/03-800.jpg 800w, ../img/tamwood/03-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (4)" data-alt-en="Studio headshot of a Tamwood International College student (4)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (4)"></figure>
+      <figure class="plate rvl rvl-img"><img src="../img/tamwood/04-1600.jpg" srcset="../img/tamwood/04-800.jpg 630w, ../img/tamwood/04-1600.jpg 630w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="630" height="632" loading="lazy" decoding="async" data-alt-es="Retrato profesional en estudio de un alumno de Tamwood International College (5)" data-alt-en="Studio headshot of a Tamwood International College student (5)" alt="Retrato profesional en estudio de un alumno de Tamwood International College (5)"></figure>
 
     </div>
 
-    <nav class="proj-nav" aria-label="Proyectos">
+    <nav class="proj-nav rvl" aria-label="Proyectos">
       <a href="lisbeth.html">
         <span class="lbl" data-es="Anterior" data-en="Previous">Anterior</span>
         <span class="ttl" data-es="Fotografía para Lisbeth Herrera Realtor" data-en="Photography for Lisbeth Herrera Realtor">Fotografía para Lisbeth Herrera Realtor</span>

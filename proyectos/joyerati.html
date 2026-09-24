@@ -29,6 +29,7 @@
 (function(){try{var t=localStorage.getItem('theme');
 if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);
 var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElement.setAttribute('lang',l);
+document.documentElement.classList.add('anim');
 }catch(e){}})();
 </script>
 </head>
@@ -64,7 +65,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
   <div class="wrap">
 
     <section class="proj-head">
-      <a class="proj-back" href="../index.html#proyectos"
+      <a class="proj-back rvl" href="../index.html#proyectos"
          data-es="← Todos los proyectos" data-en="← All work">← Todos los proyectos</a>
 
       <div class="proj-hero">
@@ -74,50 +75,50 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
                  data-src="../img/joyerati/head.mp4" aria-hidden="true"></video>
         </figure>
         <div class="proj-copy">
-  <p class="card-num">01</p>
-  <h1 data-es="Marketing y branding para Joyerati Mx" data-en="Marketing and branding for Joyerati Mx">Marketing y branding para Joyerati Mx</h1>
-  <p class="proj-lede" data-es="Diseño de campaña, sistema de catálogo y fotografía de producto para una marca de joyería en acero inoxidable." data-en="Campaign design, catalogue system and product photography for a stainless-steel jewelry brand.">Diseño de campaña, sistema de catálogo y fotografía de producto para una marca de joyería en acero inoxidable.</p>
+  <p class="card-num rvl">01</p>
+  <h1 class="rvl" style="--d:.10s" data-es="Marketing y branding para Joyerati Mx" data-en="Marketing and branding for Joyerati Mx">Marketing y branding para Joyerati Mx</h1>
+  <p class="proj-lede rvl" style="--d:.20s" data-es="Diseño de campaña, sistema de catálogo y fotografía de producto para una marca de joyería en acero inoxidable." data-en="Campaign design, catalogue system and product photography for a stainless-steel jewelry brand.">Diseño de campaña, sistema de catálogo y fotografía de producto para una marca de joyería en acero inoxidable.</p>
         </div>
       </div>
     </section>
 
     <dl class="facts">
-      <div class="fact">
+      <div class="fact rvl" style="--d:0.00s">
         <dt data-es="Cliente" data-en="Client">Cliente</dt>
         <dd>Joyerati Mx</dd>
       </div>
-      <div class="fact">
+      <div class="fact rvl" style="--d:0.08s">
         <dt data-es="Año" data-en="Year">Año</dt>
         <dd>2019</dd>
       </div>
-      <div class="fact">
+      <div class="fact rvl" style="--d:0.16s">
         <dt data-es="Tipo" data-en="Type">Tipo</dt>
         <dd data-es="Diseño gráfico · Dirección de arte · Fotografía de producto · Redes sociales" data-en="Graphic design · Art direction · Product photography · Social media">Diseño gráfico · Dirección de arte · Fotografía de producto · Redes sociales</dd>
       </div>
     </dl>
 
     <section class="story">
-      <div>
+      <div class="rvl" style="--d:0.00s">
         <h2 data-es="Contexto" data-en="Context">Contexto</h2>
         <p data-es="Mi cliente necesitaba un branding coherente en todos sus medios de comunicación, así como campañas de redes efectivas para llegar al mercado meta." data-en="My client needed consistent branding across every channel, as well as effective social campaigns to reach their target market.">Mi cliente necesitaba un branding coherente en todos sus medios de comunicación, así como campañas de redes efectivas para llegar al mercado meta.</p>
       </div>
-      <div>
+      <div class="rvl" style="--d:0.10s">
         <h2 data-es="Mi rol" data-en="My role">Mi rol</h2>
         <p data-es="Desempeñé el papel de social media manager, director de arte, fotógrafo de producto y diseñador gráfico." data-en="I worked as social media manager, art director, product photographer and graphic designer.">Desempeñé el papel de social media manager, director de arte, fotógrafo de producto y diseñador gráfico.</p>
       </div>
-      <div>
+      <div class="rvl" style="--d:0.00s">
         <h2 data-es="Proceso" data-en="Process">Proceso</h2>
         <p data-es="Mi proceso consistió en conocer toda la historia de la marca y construir una narrativa coherente con su identidad, tratando de innovar pero respetando la esencia." data-en="My process was to learn the brand&#x27;s whole story and build a narrative consistent with its identity, innovating while respecting its essence.">Mi proceso consistió en conocer toda la historia de la marca y construir una narrativa coherente con su identidad, tratando de innovar pero respetando la esencia.</p>
       </div>
-      <div>
+      <div class="rvl" style="--d:0.10s">
         <h2 data-es="Resultado" data-en="Outcome">Resultado</h2>
         <p data-es="La fotografía, el diseño de banners y el manejo de redes sociales se unieron en campañas coherentes que impulsaron el crecimiento y el reconocimiento de la marca." data-en="Photography, banner design and social media management came together in cohesive campaigns that drove growth and brand recognition.">La fotografía, el diseño de banners y el manejo de redes sociales se unieron en campañas coherentes que impulsaron el crecimiento y el reconocimiento de la marca.</p>
       </div>
     </section>
 
     <div class="plates">
-      <figure class="plate"><img src="../img/joyerati/01-1600.jpg" srcset="../img/joyerati/01-800.jpg 800w, ../img/joyerati/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (2)" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background (2)" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (2)"></figure>
-      <figure class="plate plate--video">
+      <figure class="plate rvl rvl-img"><img src="../img/joyerati/01-1600.jpg" srcset="../img/joyerati/01-800.jpg 800w, ../img/joyerati/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (2)" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background (2)" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (2)"></figure>
+      <figure class="plate plate--video rvl">
         <video class="vid" controls playsinline preload="none"
                poster="../img/joyerati/video-poster.jpg" width="846" height="848"
                data-aria-es="Video de producto de Joyerati Mx"
@@ -129,13 +130,13 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
                     data-es="Video de producto para redes sociales"
                     data-en="Product video for social media">Video de producto para redes sociales</figcaption>
       </figure>
-      <figure class="plate"><img src="../img/joyerati/02-1600.jpg" srcset="../img/joyerati/02-800.jpg 800w, ../img/joyerati/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (3)" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background (3)" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (3)"></figure>
-      <figure class="plate"><img src="../img/joyerati/03-1600.jpg" srcset="../img/joyerati/03-800.jpg 800w, ../img/joyerati/03-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (4)" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background (4)" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (4)"></figure>
-      <figure class="plate"><img src="../img/joyerati/04-1600.jpg" srcset="../img/joyerati/04-800.jpg 800w, ../img/joyerati/04-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (5)" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background (5)" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (5)"></figure>
+      <figure class="plate rvl rvl-img"><img src="../img/joyerati/02-1600.jpg" srcset="../img/joyerati/02-800.jpg 800w, ../img/joyerati/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (3)" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background (3)" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (3)"></figure>
+      <figure class="plate rvl rvl-img"><img src="../img/joyerati/03-1600.jpg" srcset="../img/joyerati/03-800.jpg 800w, ../img/joyerati/03-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (4)" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background (4)" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (4)"></figure>
+      <figure class="plate rvl rvl-img"><img src="../img/joyerati/04-1600.jpg" srcset="../img/joyerati/04-800.jpg 800w, ../img/joyerati/04-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (5)" data-alt-en="Joyerati catalogue piece: stainless-steel jewelry photographed on a black background (5)" alt="Pieza de catálogo de Joyerati: joyería de acero inoxidable fotografiada sobre fondo negro (5)"></figure>
 
     </div>
 
-    <nav class="proj-nav" aria-label="Proyectos">
+    <nav class="proj-nav rvl" aria-label="Proyectos">
       <a href="bt50.html">
         <span class="lbl" data-es="Anterior" data-en="Previous">Anterior</span>
         <span class="ttl" data-es="Fotografía deportiva para Super Sand — Torneo BT50 Beach Tennis 2024" data-en="Sports photography for Super Sand — 2024 BT50 Beach Tennis Tournament">Fotografía deportiva para Super Sand — Torneo BT50 Beach Tennis 2024</span>

@@ -29,6 +29,7 @@
 (function(){try{var t=localStorage.getItem('theme');
 if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);
 var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElement.setAttribute('lang',l);
+document.documentElement.classList.add('anim');
 }catch(e){}})();
 </script>
 </head>
@@ -64,7 +65,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
   <div class="wrap">
 
     <section class="proj-head">
-      <a class="proj-back" href="../index.html#proyectos"
+      <a class="proj-back rvl" href="../index.html#proyectos"
          data-es="← Todos los proyectos" data-en="← All work">← Todos los proyectos</a>
 
       <div class="proj-hero">
@@ -74,50 +75,50 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
                alt="" aria-hidden="true">
         </figure>
         <div class="proj-copy">
-  <p class="card-num">03</p>
-  <h1 data-es="Diseño para una marca de ropa deportiva" data-en="Design for a sportswear brand">Diseño para una marca de ropa deportiva</h1>
-  <p class="proj-lede" data-es="Diseño de producto para una marca de ropa deportiva." data-en="Product design for a sportswear brand.">Diseño de producto para una marca de ropa deportiva.</p>
+  <p class="card-num rvl">03</p>
+  <h1 class="rvl" style="--d:.10s" data-es="Diseño para una marca de ropa deportiva" data-en="Design for a sportswear brand">Diseño para una marca de ropa deportiva</h1>
+  <p class="proj-lede rvl" style="--d:.20s" data-es="Diseño de producto para una marca de ropa deportiva." data-en="Product design for a sportswear brand.">Diseño de producto para una marca de ropa deportiva.</p>
         </div>
       </div>
     </section>
 
     <dl class="facts">
-      <div class="fact">
+      <div class="fact rvl" style="--d:0.00s">
         <dt data-es="Cliente" data-en="Client">Cliente</dt>
         <dd>Augusta Sportswear Brands</dd>
       </div>
-      <div class="fact">
+      <div class="fact rvl" style="--d:0.08s">
         <dt data-es="Año" data-en="Year">Año</dt>
         <dd>2020</dd>
       </div>
-      <div class="fact">
+      <div class="fact rvl" style="--d:0.16s">
         <dt data-es="Tipo" data-en="Type">Tipo</dt>
         <dd data-es="Diseño gráfico · Dirección de arte" data-en="Graphic design · Art direction">Diseño gráfico · Dirección de arte</dd>
       </div>
     </dl>
 
     <section class="story">
-      <div>
+      <div class="rvl" style="--d:0.00s">
         <h2 data-es="Contexto" data-en="Context">Contexto</h2>
         <p data-es="Diseñé uniformes deportivos para equipos, interpretando y ejecutando especificaciones técnicas de clientes con precisión, incluyendo ajustes y modificaciones según retroalimentación directa." data-en="I designed team sports uniforms, interpreting and executing client technical specifications with precision, including adjustments and modifications based on direct feedback.">Diseñé uniformes deportivos para equipos, interpretando y ejecutando especificaciones técnicas de clientes con precisión, incluyendo ajustes y modificaciones según retroalimentación directa.</p>
       </div>
-      <div>
+      <div class="rvl" style="--d:0.10s">
         <h2 data-es="Mi rol" data-en="My role">Mi rol</h2>
         <p data-es="Desempeñé el papel de diseñador y elaboré archivos finales listos para producción e impresión, colaborando estrechamente con el equipo de Producción para asegurar que el diseño se tradujera correctamente al producto físico — cuidando la consistencia de marca y el cumplimiento de las especificaciones del cliente en cada entrega." data-en="I worked as designer and produced final files ready for production and print, working closely with the Production team so the design translated correctly to the physical product — keeping brand consistency and client specification compliance in every delivery.">Desempeñé el papel de diseñador y elaboré archivos finales listos para producción e impresión, colaborando estrechamente con el equipo de Producción para asegurar que el diseño se tradujera correctamente al producto físico — cuidando la consistencia de marca y el cumplimiento de las especificaciones del cliente en cada entrega.</p>
       </div>
-      <div>
+      <div class="rvl" style="--d:0.00s">
         <h2 data-es="Proceso" data-en="Process">Proceso</h2>
         <p data-es="Mi proceso era entender las necesidades y especificaciones del cliente, y hacer diseños de acuerdo con lo solicitado, haciendo los cambios pertinentes según fuera el caso." data-en="My process was to understand the client&#x27;s needs and specifications, and produce designs accordingly, making the relevant changes as each case required.">Mi proceso era entender las necesidades y especificaciones del cliente, y hacer diseños de acuerdo con lo solicitado, haciendo los cambios pertinentes según fuera el caso.</p>
       </div>
-      <div>
+      <div class="rvl" style="--d:0.10s">
         <h2 data-es="Resultado" data-en="Outcome">Resultado</h2>
         <p data-es="Se entregaron diseños de producto listos para producción." data-en="Product designs were delivered ready for production.">Se entregaron diseños de producto listos para producción.</p>
       </div>
     </section>
 
     <div class="plates">
-      <figure class="plate"><img src="../img/augusta/01-1600.jpg" srcset="../img/augusta/01-800.jpg 800w, ../img/augusta/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands (2)" data-alt-en="Sports jersey design for Augusta Sportswear Brands (2)" alt="Diseño de jersey deportivo para Augusta Sportswear Brands (2)"></figure>
-      <figure class="plate plate--loop">
+      <figure class="plate rvl rvl-img"><img src="../img/augusta/01-1600.jpg" srcset="../img/augusta/01-800.jpg 800w, ../img/augusta/01-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands (2)" data-alt-en="Sports jersey design for Augusta Sportswear Brands (2)" alt="Diseño de jersey deportivo para Augusta Sportswear Brands (2)"></figure>
+      <figure class="plate plate--loop rvl">
         <video muted loop playsinline preload="none"
                poster="../img/augusta/video-01-poster.jpg" width="576" height="604"
                data-src="../img/augusta/video-01.mp4"
@@ -125,8 +126,8 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
                data-aria-en="Animation of a beige camouflage baseball jersey with the number 14"
                aria-label="Animación de un jersey de béisbol en camuflaje beige con el número 14"></video>
       </figure>
-      <figure class="plate"><img src="../img/augusta/02-1600.jpg" srcset="../img/augusta/02-800.jpg 800w, ../img/augusta/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands (3)" data-alt-en="Sports jersey design for Augusta Sportswear Brands (3)" alt="Diseño de jersey deportivo para Augusta Sportswear Brands (3)"></figure>
-      <figure class="plate plate--loop">
+      <figure class="plate rvl rvl-img"><img src="../img/augusta/02-1600.jpg" srcset="../img/augusta/02-800.jpg 800w, ../img/augusta/02-1600.jpg 1240w" sizes="(min-width:1520px) 716px, (min-width:701px) 47vw, 96vw" width="1240" height="1240" loading="lazy" decoding="async" data-alt-es="Diseño de jersey deportivo para Augusta Sportswear Brands (3)" data-alt-en="Sports jersey design for Augusta Sportswear Brands (3)" alt="Diseño de jersey deportivo para Augusta Sportswear Brands (3)"></figure>
+      <figure class="plate plate--loop rvl">
         <video muted loop playsinline preload="none"
                poster="../img/augusta/video-02-poster.jpg" width="576" height="570"
                data-src="../img/augusta/video-02.mp4"
@@ -134,7 +135,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
                data-aria-en="Animation of a maroon and gold baseball jersey with the number 36"
                aria-label="Animación de un jersey de béisbol vino y dorado con el número 36"></video>
       </figure>
-      <figure class="plate plate--loop">
+      <figure class="plate plate--loop rvl">
         <video muted loop playsinline preload="none"
                poster="../img/augusta/video-03-poster.jpg" width="588" height="648"
                data-src="../img/augusta/video-03.mp4"
@@ -142,7 +143,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
                data-aria-en="Animation of a white and orange camouflage baseball jersey"
                aria-label="Animación de un jersey de béisbol en camuflaje blanco y naranja"></video>
       </figure>
-      <figure class="plate plate--loop">
+      <figure class="plate plate--loop rvl">
         <video muted loop playsinline preload="none"
                poster="../img/augusta/video-04-poster.jpg" width="476" height="548"
                data-src="../img/augusta/video-04.mp4"
@@ -150,7 +151,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
                data-aria-en="Animation of a black and red American football jersey with the number 23"
                aria-label="Animación de un jersey de fútbol americano negro y rojo con el número 23"></video>
       </figure>
-      <figure class="plate plate--loop">
+      <figure class="plate plate--loop rvl">
         <video muted loop playsinline preload="none"
                poster="../img/augusta/video-05-poster.jpg" width="376" height="550"
                data-src="../img/augusta/video-05.mp4"
@@ -160,7 +161,7 @@ var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElemen
       </figure>
     </div>
 
-    <nav class="proj-nav" aria-label="Proyectos">
+    <nav class="proj-nav rvl" aria-label="Proyectos">
       <a href="sportbowl.html">
         <span class="lbl" data-es="Anterior" data-en="Previous">Anterior</span>
         <span class="ttl" data-es="Marketing y análisis de negocio para Sport Bowl Mérida" data-en="Marketing and business analytics for Sport Bowl Mérida">Marketing y análisis de negocio para Sport Bowl Mérida</span>
