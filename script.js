@@ -359,7 +359,9 @@
       enviando: 'Enviando…',
       ok: '¡Gracias! Te respondo pronto.',
       error: 'No se pudo enviar. Escríbeme a RodArCen@outlook.com.',
-      correoAbierto: 'Abrí tu programa de correo con el mensaje listo para enviar.'
+      correoAbierto: 'Abrí tu programa de correo con el mensaje listo para enviar.',
+      faltaWa: 'Escribe tu nombre y tu mensaje para abrir WhatsApp.',
+      waAbierto: 'Abrí WhatsApp con el mensaje listo. Solo dale enviar.'
     },
     en: {
       falta: 'Some fields are missing — check the ones marked.',
@@ -367,7 +369,9 @@
       enviando: 'Sending…',
       ok: 'Thank you! I’ll get back to you soon.',
       error: 'It could not be sent. Write to me at RodArCen@outlook.com.',
-      correoAbierto: 'I opened your email app with the message ready to send.'
+      correoAbierto: 'I opened your email app with the message ready to send.',
+      faltaWa: 'Add your name and your message to open WhatsApp.',
+      waAbierto: 'I opened WhatsApp with the message ready. Just hit send.'
     }
   };
 
@@ -376,6 +380,7 @@
     if (!form) return;
     var msg = form.querySelector('.form-msg');
     var CORREO = 'RodArCen@outlook.com';
+    var WHATSAPP = '529994472850';   // solo digitos, con clave de pais
 
     function txt() { return FORM_TXT[langActual] || FORM_TXT.es; }
     function aviso(t, malo) {
@@ -392,6 +397,33 @@
       var el = campo(n);
       if (el) el.addEventListener('input', function () { marcar(el, false); });
     });
+
+    // --- WhatsApp: abre la conversación con el mensaje ya escrito ---
+    var botonWa = form.querySelector('[data-wa]');
+    if (botonWa) {
+      botonWa.addEventListener('click', function () {
+        var t = txt();
+        var nombre = campo('name'), correo = campo('email'), mensaje = campo('message');
+        // para WhatsApp basta con el nombre y el mensaje; el correo es opcional
+        var falta = false;
+        [nombre, mensaje].forEach(function (el) {
+          var mal = !el.value.trim();
+          marcar(el, mal);
+          if (mal) falta = true;
+        });
+        if (falta) { aviso(t.faltaWa, true); return; }
+
+        var lineas = (langActual === 'en')
+          ? ['Hi Rodrigo, I saw your portfolio.', 'I am ' + nombre.value.trim() + '.', '', mensaje.value.trim()]
+          : ['Hola Rodrigo, vi tu portafolio.', 'Soy ' + nombre.value.trim() + '.', '', mensaje.value.trim()];
+        if (correo.value.trim()) {
+          lineas.push('', (langActual === 'en' ? 'My email: ' : 'Mi correo: ') + correo.value.trim());
+        }
+        var url = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(lineas.join('\n'));
+        window.open(url, '_blank', 'noopener');
+        aviso(t.waAbierto, false);
+      });
+    }
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
